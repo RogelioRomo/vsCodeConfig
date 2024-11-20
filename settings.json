@@ -1,93 +1,133 @@
 {
-    //better defaults
-    "editor.copyWithSyntaxHighlighting": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.emptySelectionClipboard": false,
-    "workbench.editor.enablePreview": false,
-    "window.newWindowDimensions": "inherit",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "files.trimTrailingWhitespace": true,
-    "diffEditor.renderSideBySide": false,
-    "editor.snippetSuggestions": "top",
-    "editor.detectIndentation": false,
-    "window.nativeFullScreen": false,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "window.restoreWindows": "none",
-    "window.menuBarVisibility": "toggle",
-    "workbench.editor.editorActionsLocation": "default",
-
-    //hide everything
-    "workbench.activityBar.location": "hidden",
-    "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": "none",
-    "editor.minimap.enabled": false,
-    "editor.lineNumbers": "off",
-
-    //silence the noise
-    "breadcrumbs.enabled": true,
-    "scm.diffDecorations": "none",
-    "editor.hover.enabled": false,
-    "editor.matchBrackets": "always",
-    "workbench.tips.enabled": false,
-    "editor.colorDecorators": false,
-    "git.decorations.enabled": false,
-    "workbench.startupEditor": "none",
-    "editor.lightbulb.enabled": "off",
-    "editor.selectionHighlight": false,
-    "editor.overviewRulerBorder": false,
-    "editor.renderLineHighlight": "none",
-    "editor.occurrencesHighlight": "off",
-    "problems.decorations.enabled": false,
-    "editor.renderControlCharacters": false,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.gotoLocation.multipleReferences": "goto",
-    "editor.gotoLocation.multipleDefinitions": "goto",
-    "editor.gotoLocation.multipleDeclarations": "goto",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-
-    "editor.gotoLocation.multipleImplementations": "goto",
-    "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
-    //typography
-    "editor.fontFamily": "Cascadia Code PL",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 0,
-    "editor.suggestFontSize": 15,
-    "editor.suggestLineHeight": 28,
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.lineHeight": 1.5,
-    "workbench.iconTheme": "material-icon-theme",
-    "oneDarkPro.vivid": true,
-    "oneDarkPro.bold": true,
-
-    //error lens
-    "errorLens.lintFilePaths": {
-        "eslint": ["**/*.eslintrc.{js,cjs,yaml,yml,json}", "**/*package.json"],
-        "Stylelint": [
-          "**/*.stylelintrc",
-          "**/*.stylelintrc.{cjs,js,json,yaml,yml}",
-          "**/*stylelint.config.{cjs,js}",
-          "**/*package.json"
-        ]
-    },
-
-    //previous old configs
-
-    //prettier
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
-    "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false,
-
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "editor.guides.indentation": false,
-    "window.commandCenter": false,
-    "workbench.colorTheme": "Vim Deep Dark",
-    }
+  //better defaults
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "window.nativeFullScreen": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "window.restoreWindows": "none",
+  "workbench.editor.editorActionsLocation": "default",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "explorer.autoReveal": false,
+  //hide everything
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": "none",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "off",
+  //silence the noise
+  "breadcrumbs.enabled": true,
+  "scm.diffDecorations": "none",
+  "editor.hover.enabled": true,
+  "editor.matchBrackets": "always",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": true,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": "on",
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  //typography
+  "editor.fontFamily": "Cascadia Code PL",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 0,
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 28,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.5,
+  "workbench.iconTheme": "material-icon-theme",
+  //error lens
+  "errorLens.lintFilePaths": {
+    "eslint": [
+      "**/*.eslintrc.{js,cjs,yaml,yml,json}",
+      "**/*package.json"
+    ],
+    "Stylelint": [
+      "**/*.stylelintrc",
+      "**/*.stylelintrc.{cjs,js,json,yaml,yml}",
+      "**/*stylelint.config.{cjs,js}",
+      "**/*package.json"
+    ]
+  },
+  //previous old configs
+  //prettier
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "editor.guides.indentation": false,
+  "window.commandCenter": false,
+  "workbench.colorTheme": "August - Kanagawa",
+  //run code
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "C_Cpp.default.compilerPath": "C:\\mingw64\\bin\\g++.exe",
+  "code-runner.runInTerminal": false,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "cpp": "cd $dir && g++ -Wall -Wextra -Werror -std=c++17 *.cpp -o $fileNameWithoutExt && start cmd /K \"$dir$fileNameWithoutExt\"",
+    "typescript": "ts-node",
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[astro]": {
+    "editor.formatOnSave": true,
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "window.menuBarVisibility": "compact",
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+}
