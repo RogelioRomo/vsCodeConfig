@@ -250,10 +250,10 @@
     "when": "editorTextFocus"
   },
   //new added
-  // {
-  //   "key": "ctrl+h ctrl+v",
-  //   "command": "postman-for-vscode.sidebar-panel.focus"
-  // },
+  {
+    "key": "ctrl+h ctrl+v",
+    "command": "postman-for-vscode.sidebar-panel.focus"
+  },
   {
     "key": "ctrl+g",
     "command": "workbench.files.action.collapseExplorerFolders"

@@ -8,7 +8,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "files.trimTrailingWhitespace": true,
   "diffEditor.renderSideBySide": false,
-  "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "bottom",
   "editor.detectIndentation": false,
   "window.nativeFullScreen": false,
   "files.insertFinalNewline": true,
@@ -18,21 +18,23 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "explorer.autoReveal": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.stickyScroll.enabled": false,
+  "explorer.compactFolders": false,
   //hide everything
-  "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "multiple",
   "editor.minimap.enabled": false,
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   //silence the noise
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "scm.diffDecorations": "none",
   "editor.hover.enabled": true,
   "editor.matchBrackets": "always",
   "workbench.tips.enabled": false,
   "editor.colorDecorators": true,
-  "git.decorations.enabled": false,
+  "git.decorations.enabled": true,
   "workbench.startupEditor": "none",
   "editor.lightbulb.enabled": "on",
   "editor.selectionHighlight": false,
@@ -48,6 +50,11 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "workbench.colorCustomizations": {
+    "editorBracketMatch.border": "#eef4f449",
+    "editorBracketMatch.background": "#eef4f449",
+    "focusBorder": "#eef4f449",
+  },
   //typography
   "editor.fontFamily": "Cascadia Code PL",
   "editor.fontSize": 14,
@@ -73,10 +80,10 @@
   },
   //previous old configs
   //prettier
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features",
+  //   "editor.formatOnSave": true
+  // },
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "[jsonc]": {
@@ -85,7 +92,6 @@
   },
   "editor.guides.indentation": false,
   "window.commandCenter": false,
-  "workbench.colorTheme": "August - Kanagawa",
   //run code
   "security.allowedUNCHosts": [
     "wsl.localhost"
@@ -108,10 +114,10 @@
   "[astro]": {
     "editor.formatOnSave": true,
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
-    "editor.formatOnSave": true
-  },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features",
+  //   "editor.formatOnSave": true
+  // },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features",
     "editor.formatOnSave": true
@@ -123,11 +129,27 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": "explicit"
   },
-  "window.menuBarVisibility": "compact",
   "code-runner.clearPreviousOutput": true,
   "code-runner.showExecutionMessage": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true
   },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.menuBarVisibility": "compact",
+  "window.titleBarStyle": "custom",
 }
