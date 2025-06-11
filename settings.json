@@ -107,6 +107,10 @@
     "editor.defaultFormatter": "xaver.clang-format",
     "editor.formatOnSave": true
   },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true
+  },
   "[markdown]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true
@@ -152,4 +156,24 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "CF242B28-DB17-467D-8CC2-48D339C9F110"
+    }
+  ],
+  "mssql.connections": [
+    {
+      "authenticationType": "Integrated",
+      "connectTimeout": 30,
+      "applicationName": "vscode-mssql",
+      "server": "localhost",
+      "trustServerCertificate": true,
+      "groupId": "CF242B28-DB17-467D-8CC2-48D339C9F110",
+      "id": "0C784404-DC5C-4D01-A8F7-8D9CA132C5B4",
+      "password": ""
+    }
+  ],
+  "mssql.enableQueryHistoryCapture": false,
 }
